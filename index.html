@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sazasco - Accompagnement en Biostatistiques</title>
+    <!-- Chargement de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-teal': '#14b8a6', // teal-500
+                        'secondary-blue': '#4f46e5', // indigo-600
+                        'background-light': '#f8fafc', // slate-50
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Configuration de la police Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="bg-background-light font-sans antialiased min-h-screen p-4 sm:p-6 lg:p-8">
+
+    <!-- Conteneur principal centré -->
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
+        
+        <!-- Section d'en-tête et Résumé -->
+        <header class="p-6 sm:p-10 bg-secondary-blue text-white">
+            <h1 class="text-4xl sm:text-5xl font-extrabold mb-1">Sazasco</h1>
+            <p class="text-xl sm:text-2xl font-light opacity-90 mb-6">Biostatistiques & Data Science en Santé</p>
+
+            <!-- Métriques clés - Disposition flexible et responsive -->
+            <div class="flex flex-wrap gap-4 sm:gap-6">
+                <!-- Tarif -->
+                <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-xl shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8v8m0-8c1.11 0 2.08.402 2.592 1M9.408 10c.512-.598 1.48-1 2.592-1m0 0a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                    </svg>
+                    <div>
+                        <p class="text-sm font-light uppercase">Tarif / heure</p>
+                        <p class="text-2xl font-bold">47€</p>
+                    </div>
+                </div>
+                <!-- Réponse -->
+                <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-xl shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div>
+                        <p class="text-sm font-light uppercase">Délai de réponse</p>
+                        <p class="text-2xl font-bold">1h</p>
+                    </div>
+                </div>
+                <!-- 1er Cours Offert -->
+                <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-xl shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 15.546c-.523 0-1.4.372-1.933.744a3.003 3.003 0 00-3.082 0c-.533-.372-1.41-.744-1.933-.744-1.637 0-3 1.345-3 3s1.363 3 3 3c.523 0 1.4-.372 1.933-.744a3.003 3.003 0 003.082 0c.533.372 1.41.744 1.933.744 1.637 0 3-1.345 3-3s-1.363-3-3-3z" />
+                    </svg>
+                    <div>
+                        <p class="text-sm font-light uppercase">Offre</p>
+                        <p class="text-2xl font-bold">Cours offert (30mn)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="mt-8 text-lg italic border-t border-white/20 pt-4">
+                Biostatisticienne, je propose un accompagnement personnalisé aux étudiants en thèse et aux investigateurs en recherche biomédicale. Mon objectif : rendre vos statistiques pertinentes.
+            </p>
+        </header>
+
+        <!-- Contenu Détaillé -->
+        <main class="p-6 sm:p-10">
+            
+            <!-- Lieu du cours -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-secondary-blue mb-3">Lieux du cours</h2>
+                <div class="flex items-center space-x-2 text-lg text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v4l-4 2-4-2v-4" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 00-9-9H3v4l4 2 4-2v4a9 9 0 009 9z" />
+                    </svg>
+                    <span>Webcam (Consultation à distance)</span>
+                </div>
+            </div>
+
+            <!-- À propos de Sazasco (Bio) -->
+            <section class="mb-10 p-6 bg-background-light rounded-xl border border-gray-100">
+                <h2 class="text-2xl font-bold text-secondary-blue mb-4">À propos de Sazasco</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Biostatisticienne, épidémiologiste et data scientist en santé, je travaille dans la recherche biomédicale où j’accompagne avec succès de nombreux étudiants en médecine et investigateurs dans leurs études cliniques. Passionnée par la vulgarisation scientifique, j’ai contribué à plusieurs publications dans des revues spécialisées. J’aime rendre les statistiques accessibles, logiques et utiles, en alliant rigueur et clarté dans chaque accompagnement. Que ce soit pour un mémoire, une thèse ou une publication, mon objectif est de vous aider à gagner en autonomie et en confiance face à vos analyses.
+                </p>
+            </section>
+
+            <!-- À propos du cours (Détails) -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold text-secondary-blue mb-4">À propos du cours</h2>
+                
+                <!-- Niveau et Langue -->
+                <div class="flex space-x-6 mb-4 text-lg">
+                    <span class="flex items-center space-x-2 text-primary-teal font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        <span>Tous niveaux</span>
+                    </span>
+                    <span class="flex items-center space-x-2 text-primary-teal font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m4 2l4-4m-4 4l4 4m6-4a9 9 0 01-9 9m9-9H3m4 2l4-4m-4 4l4 4m6-4a9 9 0 01-9 9" />
+                        </svg>
+                        <span>Français</span>
+                    </span>
+                </div>
+
+                <p class="text-gray-600 leading-relaxed">
+                    Je propose de véritables consultations statistiques. Après un échange pour cerner votre besoin (analyse, interprétation, rédaction ou vérification), nous avançons pas à pas sur vos données. J’alterne explications claires, applications concrètes et illustrations sur R, afin que chaque méthode soit comprise et reproductible. Mon accompagnement est spécifique pour les doctorants, chercheurs et investigateurs : aide méthodologique, à la rédaction de la partie statistique d’un article, ou à la revue critique de résultats avant publication. Je vous aide à concevoir des tables et graphiques "ready for publication"! Mon approche privilégie la compréhension et la rigueur scientifique. Mes consultations s’adressent aux étudiants dès le Master, aux thésards et aux professionnels du secteur santé ou recherche clinique.
+                </p>
+            </section>
+
+            <!-- Tarifs -->
+            <section>
+                <h2 class="text-2xl font-bold text-secondary-blue mb-4">Tarifs & Forfaits</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Carte Tarifs Principaux -->
+                    <div class="p-6 bg-background-light rounded-xl shadow-lg border-t-4 border-primary-teal">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Tarif à l'heure (Aide ponctuelle)</h3>
+                        <p class="text-4xl font-extrabold text-secondary-blue mb-4">47€<span class="text-xl font-normal text-gray-500"> / heure</span></p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg><span>Aide ponctuelle ou déblocage rapide.</span></li>
+                            <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg><span>Webcam: 47€/h.</span></li>
+                            <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg><span>Déplacements: +15€.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Carte Tarifs Packs -->
+                    <div class="p-6 bg-secondary-blue text-white rounded-xl shadow-xl border-t-4 border-primary-teal">
+                        <h3 class="text-xl font-semibold mb-3">Forfaits de suivi (Complet)</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center bg-white/10 p-3 rounded-lg">
+                                <span class="text-lg font-medium">Forfait 5 heures</span>
+                                <span class="text-3xl font-extrabold">200€</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white/10 p-3 rounded-lg">
+                                <span class="text-lg font-medium">Forfait 10 heures</span>
+                                <span class="text-3xl font-extrabold">380€</span>
+                            </div>
+                        </div>
+
+                        <p class="mt-4 text-sm font-light italic">
+                            Le forfait 10h inclut un suivi complet (méthode, analyse et rapport). Les heures supplémentaires au-delà du forfait 10h sont maintenues au tarif de 38€/h.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cours Offert -->
+                <div class="mt-6 p-4 bg-primary-teal/10 border border-primary-teal rounded-xl flex items-center space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3 .895-3 2 1.343 2 3 2m0-8v8m0-8c1.11 0 2.08.402 2.592 1M9.408 10c.512-.598 1.48-1 2.592-1m0 0a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                    </svg>
+                    <p class="text-gray-700 font-medium">
+                        Cours offert : <span class="font-bold">30 minutes</span> pour cerner vos besoins et planifier l'accompagnement.
+                    </p>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Pied de page -->
+        <footer class="p-6 sm:p-10 bg-gray-100 rounded-b-2xl border-t border-gray-200">
+            <p class="text-sm text-gray-500 text-center">
+                Accompagnement personnalisé pour étudiants (Master, Thèse) et investigateurs en recherche clinique.
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
